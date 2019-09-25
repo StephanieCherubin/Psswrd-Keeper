@@ -16,9 +16,10 @@ export const editPassword = (index, name, password) => {
   }
 }
 
-export const deletePassword = index => {
+export const deletePassword = (index) => {
   return {
     type: DELETE_PASSWORD,
     payload: { index }
   }
 }
+
