@@ -61,7 +61,7 @@ class Password extends Component {
               onChange={(e) => {this.setState({ password: e.target.value })}}
             />
           </label>
-          <input type="submit" value="Submit" />
+
         </div>
 
         <div>
