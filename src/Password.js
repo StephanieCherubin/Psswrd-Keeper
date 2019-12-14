@@ -38,38 +38,37 @@ class Password extends Component {
     return (
       <div>
         <div>
-          <label> Name
+          <label> Name:</label>
             <input
+              type="text"
               value={this.state.name}
               onChange={(e) => this.setState({ name: e.target.value })}
             />
-          </label>
+          
           <br />
           <label>Unique description of password:
+            </label>
+            <br />
             <input
                 type="text" name="description"
                 value={this.state.description}
                 onChange={(e) => {this.setState({ description: e.target.value })}}
               />
-          </label>
             <br />
-          <label>
-            Password:
+            <br />
+            <hr />
+          <div>
+            <button onClick={(e) => {
+              this.generatePassword()
+            }}>Generate a New Password</button>
+          </div>
             <input
               type="text" name="password"
               value={this.state.password}
               onChange={(e) => {this.setState({ password: e.target.value })}}
             />
-          </label>
 
         </div>
-
-        <div>
-          <button onClick={(e) => {
-            this.generatePassword()
-          }}>Generate</button>
-        </div>
-
         <div>
           <button onClick={(e) => {
             this.props.addPassword(this.state.name, this.state.password)
