@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "eslint-config-airbnb": "^18.2.1",
+    "is-svg": "^4.2.2",
     "kind-of": "^6.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -31,6 +32,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {}
+  }
 }
